@@ -1,26 +1,26 @@
 class Rustyman < Formula
   desc "High-performance MITM HTTP/HTTPS proxy written in Rust"
   homepage "https://github.com/johnsonlee/rustyman"
-  version "0.2.3"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/johnsonlee/rustyman/releases/download/v0.2.3/rustyman-aarch64-apple-darwin.tar.gz"
-      sha256 "091d591b35cdb94ae86d5ef87070fb26e2f5b92d2d50b7ab21f33cb7047abc2a"
+      url "https://github.com/johnsonlee/rustyman/releases/download/v0.3.0/rustyman-aarch64-apple-darwin.tar.gz"
+      sha256 "6f1ccb4828a9965dafa81659f8aa6b9fb713cf47d232839baf786703c7007623"
     else
-      url "https://github.com/johnsonlee/rustyman/releases/download/v0.2.3/rustyman-x86_64-apple-darwin.tar.gz"
-      sha256 "a74a358336e8a51484171acbe2fe990e16d16acb1167acd0201033390a0ab9ad"
+      url "https://github.com/johnsonlee/rustyman/releases/download/v0.3.0/rustyman-x86_64-apple-darwin.tar.gz"
+      sha256 "3726d8303277202891fe96294f478bd87d6cc88991febf7002156a8170ce78af"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/johnsonlee/rustyman/releases/download/v0.2.3/rustyman-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0a38542e66d438f608b28077bcd8234f0fbb9cb386520391f0804e2d2edad115"
+      url "https://github.com/johnsonlee/rustyman/releases/download/v0.3.0/rustyman-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f9d70a262c969007313783550ff5c19177078d0aa2977e13c2513f9cf881735e"
     else
-      url "https://github.com/johnsonlee/rustyman/releases/download/v0.2.3/rustyman-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9ce35d8e450b4cf55711c8dd35e54b6becf85be3f6e0250d785a7e493b1c5c25"
+      url "https://github.com/johnsonlee/rustyman/releases/download/v0.3.0/rustyman-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "fd13ee4fc5bd1ca7b5fbac9ec7b14053fff2f3c22aa604f5ca9c438478f0a7d8"
     end
   end
 
